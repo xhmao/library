@@ -58,7 +58,7 @@ public class DatabaseBackup {
 
     public void backup(int[] types) {
         if (writable()) {
-            File backup = new File(mContext.getExternalFilesDir(null), BACKUP_FILE);
+            File backup = new File(mContext.getFilesDir(), BACKUP_FILE);
             Writer writer = null;
             try {
                 writer = new BufferedMaskWriter(new FileWriter(backup), 0xff);
@@ -80,7 +80,7 @@ public class DatabaseBackup {
 
     public void restore() {
         if (readable()) {
-            File backup = new File(mContext.getExternalFilesDir(null), BACKUP_FILE);
+            File backup = new File(mContext.getFilesDir(), BACKUP_FILE);
             if (backup.exists()) {
                 Reader reader = null;
                 try {
