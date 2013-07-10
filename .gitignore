@@ -1,0 +1,11 @@
+bin/
+out/
+doc/
+.settings
+bin
+gen
+target
+local.properties
+proguard.cfg
+.idea
+ss/
