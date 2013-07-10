@@ -102,10 +102,4 @@ public class DatabaseBackup {
             }
         }
     }
-
-    public void close() {
-        if (mDb != null) {
-            mDb.close();
-        }
-    }
 }
