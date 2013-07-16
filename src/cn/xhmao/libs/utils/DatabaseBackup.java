@@ -102,4 +102,8 @@ public class DatabaseBackup {
             }
         }
     }
+
+    public static String getBackupFileName() {
+        return BACKUP_FILE;
+    }
 }
